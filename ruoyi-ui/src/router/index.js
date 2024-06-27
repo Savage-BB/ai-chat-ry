@@ -42,6 +42,11 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '',
+    component: () => import('@/views/chatIndex'),
+    hidden: true
+  },
+  {
     path: '/login',
     component: () => import('@/views/login'),
     hidden: true
@@ -62,7 +67,7 @@ export const constantRoutes = [
     hidden: true
   },
   {
-    path: '',
+    path: '/index',
     component: Layout,
     redirect: 'index',
     children: [
@@ -162,6 +167,7 @@ export const dynamicRoutes = [
       }
     ]
   }
+
 ]
 
 // 防止连续点击多次路由报错
