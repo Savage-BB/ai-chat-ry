@@ -22,11 +22,16 @@ public class AiChatController {
 
     @Resource
     private AIChatServiceImpl aiChatService;
-    @ApiOperation("更新用户")
+
+    @ApiOperation("http json 接口")
     @GetMapping("/get")
-    public R<String> get(String content )
-    {
-
-
+    public R<String> get(String content) {
         return R.ok(aiChatService.chat(content));
-    }}
+    }
+
+    @ApiOperation("sse")
+    @GetMapping("/sse")
+    public R<String> sse(String content) {
+        return R.ok(aiChatService.chat(content));
+    }
+}

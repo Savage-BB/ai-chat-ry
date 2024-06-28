@@ -27,6 +27,12 @@
             <artifactId>hutool-all</artifactId>
             <version>5.8.17</version>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>cn.bigmodel.openapi</groupId>-->
+<!--            <artifactId>oapi-java-sdk</artifactId>-->
+<!--            <version>release-V4-2.0.2</version>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>
